@@ -1,0 +1,90 @@
+<%- include('partials/navbar', { page: '/' }) %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Haadi’s Climate Projects</title>
+  <link href="/css/main.css" rel="stylesheet" />
+</head>
+<body class="bg-base-100 font-sans">
+
+  <!-- Navbar -->
+  <nav class="navbar bg-base-200 px-6 py-4">
+    <div class="flex-1">
+      <a href="/" class="btn btn-ghost normal-case text-2xl font-mono">Haadi’s Projects</a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal p-0">
+        <li><a href="/about">About Me</a></li>
+        <li tabindex="0">
+          <details>
+            <summary class="cursor-pointer">Categories</summary>
+            <ul class="p-2 bg-base-200">
+              <li><a href="/solutions/projects?sector=energy">Energy</a></li>
+              <li><a href="/solutions/projects?sector=industry">Industry</a></li>
+              <li><a href="/solutions/projects?sector=agriculture">Agriculture</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <main class="container mx-auto px-6 py-10">
+    <div class="hero bg-gradient-to-r from-green-300 to-blue-400 text-white rounded-lg p-10 mb-12">
+      <div class="hero-content text-center">
+        <h1 class="text-5xl font-serif mb-4">Welcome to My Climate Innovations</h1>
+        <p class="mb-6">I’ve hand-picked my favorite sustainability projects that inspire me.</p>
+        <a href="/solutions/projects" class="btn btn-primary">Browse All Projects</a>
+      </div>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Bioplastics -->
+      <div class="card bg-base-200 shadow-lg hover:shadow-xl transition">
+        <div class="card-body">
+          <h2 class="card-title font-serif">Bioplastics</h2>
+          <p>Plastics made from plant materials can significantly cut down on oil usage and help reduce landfill waste.</p>
+          <div class="card-actions justify-end">
+            <a href="/solutions/projects/7" class="btn btn-sm btn-accent">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Recycled Metals -->
+      <div class="card bg-base-200 shadow-lg hover:shadow-xl transition">
+        <div class="card-body">
+          <h2 class="card-title font-serif">Recycled Metals</h2>
+          <p>Turning scrap metal into new products saves energy and lowers the need for new mining operations.</p>
+          <div class="card-actions justify-end">
+            <a href="/solutions/projects/17" class="btn btn-sm btn-accent">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Ocean Shipping -->
+      <div class="card bg-base-200 shadow-lg hover:shadow-xl transition">
+        <div class="card-body">
+          <h2 class="card-title font-serif">Efficient Shipping</h2>
+          <p>Optimizing vessel routes and designs can cut greenhouse gas emissions across global trade routes.</p>
+          <div class="card-actions justify-end">
+            <a href="/solutions/projects/18" class="btn btn-sm btn-accent">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Solar PV -->
+      <div class="card bg-base-200 shadow-lg hover:shadow-xl transition">
+        <div class="card-body">
+          <h2 class="card-title font-serif">Solar Photovoltaics</h2>
+          <p>Rooftop solar and distributed PV empower communities to generate clean, onsite electricity.</p>
+          <div class="card-actions justify-end">
+            <a href="/solutions/projects/19" class="btn btn-sm btn-accent">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

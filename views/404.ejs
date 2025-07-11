@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page Not Found – Haadi’s Projects</title>
+  <link href="/css/main.css" rel="stylesheet" />
+</head>
+<body class="bg-base-100 font-sans">
+
+  <!-- Include Navbar -->
+  <%- include('partials/navbar', { page }) %>
+
+  <main class="container mx-auto px-6 py-20">
+    <div class="hero bg-red-100 rounded-lg p-10 text-center">
+      <h1 class="text-7xl font-serif font-bold mb-4 text-red-600">404</h1>
+      <p class="text-2xl mb-6"><%= message || "Whoops! That page doesn’t exist." %></p>
+      <a href="/" class="btn btn-accent">Back to Home</a>
+    </div>
+  </main>
+
+</body>
+</html>

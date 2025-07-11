@@ -1,0 +1,51 @@
+<%- include('partials/navbar', { page: '/about' }) %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>About Haadi Imran Mithawala</title>
+  <link href="/css/main.css" rel="stylesheet"/>
+</head>
+<body class="bg-base-100 font-sans text-gray-800">
+  <nav class="navbar bg-base-200 px-6 py-4">
+    <div class="flex-1">
+      <a href="/" class="btn btn-ghost normal-case text-2xl font-mono">Haadi’s Projects</a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal p-0">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about" class="active">About Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container mx-auto px-6 py-12">
+    <div class="hero bg-base-200 rounded-lg p-10 mb-12 text-center">
+      <h1 class="text-5xl font-serif mb-4">Hi, I’m Haadi!</h1>
+      <p class="text-lg">
+        I’m a web developer and sustainability enthusiast. In WEB322, I build interactive Node.js applications with Tailwind CSS.
+        When I’m not coding, I love trekking, photography, and experimenting with plant-based cooking.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+      <div>
+        <h2 class="text-3xl font-serif mb-2">My Background</h2>
+        <p class="mb-4">
+          I studied computer science and have always been fascinated by how code can solve real-world problems.
+          Now, I’m combining my passion for technology and the planet by developing web tools that promote clean energy solutions.
+        </p>
+      </div>
+      <div>
+        <h2 class="text-3xl font-serif mb-2">What’s Next?</h2>
+        <p>
+          I’m eager to explore serverless architectures, machine-learning integrations, and open-source collaborations
+          that further environmental impact. Let’s connect!
+        </p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

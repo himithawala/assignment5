@@ -1,0 +1,25 @@
+<nav class="navbar bg-base-100 shadow-md mb-6">
+  <div class="flex-1">
+    <a href="/" class="btn btn-ghost text-xl">
+      🌍 Climate Solutions
+    </a>
+  </div>
+  <div class="flex-none">
+    <ul class="menu menu-horizontal px-1">
+      <li><a href="/" class="<%= page === '/' ? 'active text-white' : '' %>">Home</a></li>
+      <li><a href="/about" class="<%= page === '/about' ? 'active text-white' : '' %>">About</a></li>
+      <li><a href="/sites" class="<%= page === '/solutions/projects' ? 'active text-white' : '' %>">All Projects</a></li>
+      <li>
+        <details>
+          <summary>Filter</summary>
+          <ul class="p-2 bg-base-100">
+           <li><a href="/solutions/projects?sector=Renewable Energy">Renewable Energy</a></li>
+           <li><a href="/solutions/projects?sector=Carbon Reduction">Carbon Reduction</a></li>
+           <li><a href="/solutions/projects?sector=Community Action">Community Action</a></li>
+
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </div>
+</nav>

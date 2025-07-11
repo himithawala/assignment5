@@ -1,0 +1,28 @@
+<%- include('partials/navbar', { page: '' }) %>
+
+<section class="container mx-auto px-4 py-10">
+  <h1 class="text-4xl font-bold mb-2 text-center"><%= project.title %></h1>
+  <p class="text-center text-gray-600 mb-6"><%= project.sector %> Sector</p>
+
+  <img src="<%= project.imageUrl %>" alt="<%= project.title %>" class="mx-auto rounded shadow mb-6 max-w-3xl h-72 object-cover">
+
+  <div class="max-w-3xl mx-auto">
+    <p class="text-lg mb-8"><%= project.description %></p>
+  </div>
+
+  <div class="max-w-2xl mx-auto bg-green-100 p-4 rounded shadow text-center">
+    <h2 class="text-xl font-semibold mb-2">Inspiring Quote</h2>
+    <p id="quoteBox" class="italic text-gray-700">Loading quote...</p>
+  </div>
+</section>
+
+<script>
+  fetch("https://dummyjson.com/quotes/random")
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("quoteBox").innerText = `"${data.quote}" — ${data.author}`;
+    })
+    .catch(() => {
+      document.getElementById("quoteBox").innerText = "Unable to load quote.";
+    });
+</script>
